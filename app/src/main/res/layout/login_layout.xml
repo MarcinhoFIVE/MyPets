@@ -13,6 +13,9 @@
         android:src="#6c6c6c"/>
 
     <EditText
+        android:padding="7dp"
+        android:background="@drawable/borda"
+        android:drawableLeft="@drawable/ic_baseline_email"
         android:autofillHints=""
         android:id="@+id/etUser"
         android:layout_width="match_parent"
@@ -22,12 +25,15 @@
         android:maxLength="100" />
 
     <EditText
+        android:padding="7dp"
+        android:background="@drawable/borda"
+        android:drawableLeft="@drawable/ic_baseline_lock"
         android:id="@+id/etPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/insira_sua_senha"
         android:inputType="textPassword"
-        android:maxLength="5"/>
+        android:maxLength="8"/>
 
     <Button
         android:id="@+id/btnEntrar"
