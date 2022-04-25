@@ -22,15 +22,23 @@ public class LoginActivity extends AppCompatActivity {
         btnSair = findViewById(R.id.btnSair);
 
         //Evento de click nos botões
-
+        
+        
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (edtUsuario == edtUsuario && edtSenha == edtSenha) {
+                    Toast.makeText(LoginActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-
-
     }
 
     public void AcessaSistema(View view) {
