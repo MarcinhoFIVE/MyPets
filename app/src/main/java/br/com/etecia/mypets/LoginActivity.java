@@ -2,6 +2,7 @@ package br.com.etecia.mypets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,16 +23,18 @@ public class LoginActivity extends AppCompatActivity {
         btnSair = findViewById(R.id.btnSair);
 
         //Evento de click nos botões
-        
-        
-        btnEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (edtUsuario == edtUsuario && edtSenha == edtSenha) {
+        btnEntrar.setOnClickListener(View -> {
+                if (edtUsuario.getText().toString().equals("hello") && edtSenha.getText().toString().equals("world")) {
                     Toast.makeText(LoginActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
+                    //Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+
+
+                } else {
+                    Toast.makeText(LoginActivity.this, "Error", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        );
         
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
