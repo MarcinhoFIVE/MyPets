@@ -28,20 +28,26 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
                     //Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
-
-
+                    finish();
                 } else {
-                    Toast.makeText(LoginActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Usuário e/ou Senha inválidos", Toast.LENGTH_SHORT).show();
+                    limparTela();
                 }
             }
         );
-        
+
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
+    }
+
+    public void limparTela() {
+        edtUsuario.setText("");
+        edtSenha.setText("");
+        edtUsuario.requestFocus();
     }
 
     public void AcessaSistema(View view) {
