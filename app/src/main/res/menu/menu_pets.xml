@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <
+    <item
+        android:icon="@drawable/ic_baseline_add"
+        android:id="@+id/icCadastrar"
+        android:title="Cadastrar"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_update"
+        android:id="@+id/icAlterar"
+        android:title="Alterar"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_delete"
+        android:id="@+id/icDelete"
+        android:title="Deletar"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_search"
+        android:id="@+id/icPesquisar"
+        android:title="Pesquisar"
+        app:showAsAction="never"
+        />
+
 
 </menu>
