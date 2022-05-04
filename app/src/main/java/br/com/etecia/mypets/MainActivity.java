@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         imgVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                //startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), MenuActivity.class));
                 finish();
             }
         });
