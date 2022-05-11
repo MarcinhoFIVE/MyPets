@@ -26,7 +26,8 @@
                 android:textSize="25sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Café Badilico" />
+                android:text="Café Badilico"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,14 +50,19 @@
             </LinearLayout>
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$ .Italian, Café" />
+                android:text="$ .Italian, Café"
+                android:layout_marginVertical="6dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Small plates, salads and sandwiches an intimate settings with 12 indoor seats plus patio seating." />
+                android:text="Small plates, salads and sandwiches an intimate settings with 12 indoor seats plus patio seating."
+                android:layout_marginVertical="8dp"
+                />
 
             <View
                 android:layout_width="match_parent"
@@ -77,28 +83,43 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5:30 PM" />
+                android:text="5:30 PM"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginHorizontal="3dp"
+                android:textSize="11sp"
+                />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7:30 PM" />
+                android:text="7:30 PM"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginHorizontal="3dp"
+                android:textSize="11sp"
+                />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8:00 PM" />
+                android:text="8:00 PM"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginHorizontal="3dp"
+                android:textSize="11sp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9:00 PM" />
+                android:text="9:00 PM"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginHorizontal="3dp"
+                android:textSize="11sp"/>
         </LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESERVE" />
+                android:text="RESERVE"
+                style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
         </LinearLayout>
 
