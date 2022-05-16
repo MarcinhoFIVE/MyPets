@@ -40,7 +40,6 @@ public class MenuActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Pesquisa realizada!", Toast.LENGTH_SHORT).show();
                 break;
             default:
-
         }
 
         return super.onOptionsItemSelected(item);
