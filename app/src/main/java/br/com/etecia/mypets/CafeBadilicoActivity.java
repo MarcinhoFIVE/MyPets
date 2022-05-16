@@ -9,14 +9,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class CafeBadilicoActivity extends AppCompatActivity {
 
     CardView idCardView;
-    Button idBtnUm;
-    Button idBtnDois;
-    Button idBtnTres;
-    Button idBtnQuatro;
-    Button idBtnCinco;
+    Button idHoraUm;
+    Button idHoraDois;
+    Button idHoraTres;
+    Button idHoraQuatro;
+    Button idHoraCinco;
+    FloatingActionButton idFABCafe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,45 +35,45 @@ public class CafeBadilicoActivity extends AppCompatActivity {
             }
         });
 
-        idBtnUm = findViewById(R.id.idBtnUm);
+        idHoraUm = findViewById(R.id.idHoraUm);
 
-        idBtnUm.setOnClickListener(new View.OnClickListener() {
+        idHoraUm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Cliquei em 5:30", Toast.LENGTH_SHORT).show();
             }
         });
 
-        idBtnDois = findViewById(R.id.idBtnDois);
+        idHoraDois = findViewById(R.id.idHoraDois);
 
-        idBtnDois.setOnClickListener(new View.OnClickListener() {
+        idHoraDois.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Cliquei em 7:30", Toast.LENGTH_SHORT).show();
             }
         });
 
-        idBtnTres = findViewById(R.id.idBtnTres);
+        idHoraTres = findViewById(R.id.idHoraTres);
 
-        idBtnTres.setOnClickListener(new View.OnClickListener() {
+        idHoraTres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Cliquei em 8:30", Toast.LENGTH_SHORT).show();
             }
         });
 
-        idBtnQuatro = findViewById(R.id.idBtnQuatro);
+        idHoraQuatro = findViewById(R.id.idHoraQuatro);
 
-        idBtnQuatro.setOnClickListener(new View.OnClickListener() {
+        idHoraQuatro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Cliquei em 9:00", Toast.LENGTH_SHORT).show();
             }
         });
 
-        idBtnCinco = findViewById(R.id.idBtnCinco);
+        idHoraCinco = findViewById(R.id.idHoraCinco);
 
-        idBtnCinco.setOnClickListener(new View.OnClickListener() {
+        idHoraCinco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Cliquei em Reservar", Toast.LENGTH_SHORT).show();

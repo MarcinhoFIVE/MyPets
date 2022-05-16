@@ -6,7 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".CafeBadilicoActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFABCafe"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add"
+        />
+
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="21dp"
         android:id="@+id/idCardView"
         app:cardElevation="20dp"
         android:layout_width="375dp"
@@ -83,7 +94,7 @@
                 android:orientation="horizontal">
 
             <Button
-                android:id="@+id/idBtnUm"
+                android:id="@+id/idHoraUm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5:30 PM"
@@ -93,7 +104,7 @@
                 />
 
             <Button
-                android:id="@+id/idBtnDois"
+                android:id="@+id/idHoraDois"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="7:30 PM"
@@ -103,7 +114,7 @@
                 />
 
             <Button
-                android:id="@+id/idBtnTres"
+                android:id="@+id/idHoraTres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="8:00 PM"
@@ -112,7 +123,7 @@
                 android:textSize="11sp"/>
 
             <Button
-                android:id="@+id/idBtnQuatro"
+                android:id="@+id/idHoraQuatro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9:00 PM"
@@ -122,7 +133,7 @@
         </LinearLayout>
 
             <Button
-                android:id="@+id/idBtnCinco"
+                android:id="@+id/idHoraCinco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RESERVE"
